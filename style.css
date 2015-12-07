@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 700px;
+}
+
+header {
+  height: 700px;
+}
+
+@font-face {
+    font-family: "Lato-Reg";
+    src: url(fonts/Lato-Reg.ttf);
+}
+
+/* NAV START */
+
+.main-nav,
+.main {
+  position: relative; 
+}
+
+.main-nav {
+  background: #fff;
+  height: 80px;
+  z-index: 150;
+  margin-bottom: -80px;
+  border-bottom: 1px solid #FF6A00;
+}
+
+header,
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.main-nav ul {
+	list-style: none;
+	padding: 0 25px;
+	margin: 0;
+}
+
+.links {
+	float: right;
+	padding: 25px 5px;
+}
+
+.links a{
+	font-family: "Lato-Reg";
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #222;
+}
+
+.links a:hover{
+	text-decoration: underline;
+	text-decoration-color: #FF6A00;
+}
+
+.title {
+	padding: 25px 25px;
+	list-style: none;
+	float: left;
+	color: red;
+}
+
+.title a{
+	font-family: "Lato-Reg";
+	font-style: bold;
+	font-size: 20px;
+	color: #222;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* NAV END */
+.main {
+	width: 100%;
+}
+
+.intro {
+	float: left;
+  	background: #f2f2e8;
+  	padding: 50px 45% 50px 5%;
+  	border-left: 1px solid #222;
+  	margin: 0;
+}
+
+.menu {
+	float: left;
+    background: green;
+    list-style: none;
+    width: 100%;
+}
+
+.menu ul {
+	margin: 0;
+    padding: 0;
+}
+
+.menu li {
+	width: 50%;
+    background: white;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.menu li a{
+	float: left;
+}
+
+h2 {
+	font-family: "Lato-Reg";
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+#footer {
+	width: 100%;
+	float: left;
+	background-color: red;
+}
