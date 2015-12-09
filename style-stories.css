@@ -1,0 +1,17 @@
+.grid-item--width1 { 
+	width: 264.91px; 
+	height: 397;
+	background-color: #b0b0b0;
+}
+
+.grid-item--width2 { 
+	width: 668px; 
+	height:445;
+	background-color: #222222;
+}
+
+.grid-item--width3 { 
+	width: 306.67px; 
+	height: 460px;
+	background-color: #d0d0d0;
+}

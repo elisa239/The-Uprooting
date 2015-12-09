@@ -1,3 +1,16 @@
+.united-kingdom {
+	background-repeat: no-repeat;
+}
+
+.heaven-on-earth {
+	fill: yellow;
+}
+
 #map {
-	width: 100%;
+	width:100%;
+}
+
+#region-name {
+	font-size: 100px;
+	color: red;
 }
