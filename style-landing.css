@@ -133,23 +133,6 @@ body {
   background-color: white;
 }
 
-
-.sharing a, 
-a:link,
-a:active,
-a:visited {
-	-webkit-transition: color 0.25s ease-out;
-	-moz-transition: color 0.25s ease-out;
-	-o-transition: color 0.25s ease-out;
-	transition: color 0.25s ease-out;
-	color:#21a97e;
-	outline: none;
-	text-decoration:none;
-	}
-	a:hover { 
-		color:#000;
-		}
-
 .sharing img {
 	width:30px;
 	margin: 0 5px;

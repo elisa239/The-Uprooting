@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
  
 	var mobile = 'ontouchend' in window;
 	jQuery('.video-container').each(function() {
@@ -21,4 +21,4 @@ $(document).ready(function() {
 		
 	});
 	
-})();
+})();*/
