@@ -177,7 +177,6 @@ header,
     transform: translate(-50%, 0%);
 }
 
-
 .text-container {
   padding:10%;
 }
@@ -191,48 +190,6 @@ header,
   border-left: solid 1px #FF6A00;
 }
 
-.info {
-  font-family: 'PT Serif', serif;
-  text-align: center;
-  line-height: 25px;
-  color: #222222;
-  font-size: 14px;
-  padding: 21% 200px 0 200px;
-  margin: 0px;
-}
-
-.title {
-  width: 500px;
-    padding: 40px;
-    margin:0;
-}
-
-.title h1 {
-  font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
-    text-transform: capitalize;
-    margin: 0;
-    color: #FFFFFF;
-    font-size: 58px;
-}
-
-.title h2 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    color: #FFFFFF;
-    padding: 8px 6px;
-    line-height: 40px;
-    font-size: 38px;
-}
-
-h3 {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-transform: capitalize;
-    color: #222222;
-    padding: 8px 6px;
-    line-height: 30px;
-    font-size: 20px;
-}
 
 .links-home {
     height: 300px;
