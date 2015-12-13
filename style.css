@@ -85,6 +85,34 @@ header,
   background: #ffffff;
 }
 
+.main-title {
+    float: left;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.links {
+    float: left;
+    padding-top: 42px;
+}
+
+.links a {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000000;
+    text-decoration:none;
+}
+
+.links a:active, a:visited {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-color: #000000;
+}
+
+.links a:hover {
+  color: #666666;
+}
+
 /* STYLING BODY HOME PAGE */
 
 .pagination {
@@ -123,8 +151,6 @@ header,
   top:0;
   right:0;
   width: 100%;
-  height: 91%;
-  background-size: 100% 100%;
   background-color: black; /* in case the video doesn't fit the whole page*/
   background-image: /* our video */;
   background-position: center center;
@@ -132,6 +158,23 @@ header,
   object-fit: cover; /*cover video background */
   z-index:-1;
   overflow: hidden;
+}
+
+.video-container {
+  position:relative;
+  max-height: 620px;
+}
+
+.down-arrow {
+    position: absolute;
+    width: 40px;
+    bottom: 0;
+    margin:0;
+    left: 50%;
+    background-color: #fff;
+    padding: 10px;
+    opacity: .7;
+    transform: translate(-50%, 0%);
 }
 
 
@@ -191,74 +234,108 @@ h3 {
     font-size: 20px;
 }
 
-.links {
-    float: left;
-    padding-top: 42px;
-}
-
-.links a {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #000000;
-    text-decoration:none;
-}
-
-.links a:active, a:visited {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-color: #000000;
-}
-
-.links a:hover {
-  color: #d0d0d0;
-}
-
 .links-home {
-    height: 500px;
-    background-color: red;
-    border-bottom: solid 1px #FF6A00;
+    height: 300px;
+    overflow: hidden;
+    padding: 50px 0;
+    border-bottom: solid 1px #f0f0f0;
+}
+
+.divider {
+    float: left;
+    background-color: #FF6A00;
+    height: inherit;
+    width: 1px;
 }
 
 .links-home .link1, .link2{
     float: left;
     background-color: #FFFFFF;
     height: 100%;
-    width: 49.95%;
-    text-align:center;
-}
-
-.links-home .link1{
-  border-right: solid 1px #FF6A00;
+    width: 49.8%;
+    text-align: center;
 }
 
 .links-home .link1 a,
 .link2 a{
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
-    color: red;
+    color: #000000;
     height: 61px;
     top: 50%;
     position: relative;
     text-decoration: none;
 }
 
+.links-home .link1 a:hover,
+.link2 a:hover{
+    border-bottom: 3px solid #FF6A00;
+}
+
 .contribute {
+  position: relative;
+  font-family: 'Source Sans Pro', sans-serif;
   height: 500px;
   text-align: center;
 }
 
-.contribute p {
-    font-family: 'Source Sans Pro', sans-serif;
-    vertical-align: middle;
-    padding-top: 25%;
+.contribute-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
-.main-title {
-    float: left;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 22px;
-    padding: 15px;
-    text-transform: uppercase;
+.contribute p{
+  line-height: 20px;
+}
+
+.contribute-button {
+  position: relative;
+  height: 42px;
+  width: 200px;
+  border: 1px solid #FF6A00;
+  text-align: center;
+  margin: auto;
+  top: 20px;
+}
+
+.contribute-button a {
+  position: absolute;
+  text-decoration: none;
+  color: #000000;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.contribute-button a:hover {
+  color: #444444;
 }
 
 #fullpage img{
-    width:100%;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #f0f0f0;
+}
+
+.footer p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+}
+
+.sharing img {
+  width:30px;
+  margin: 0 5px;
+}
+
+.sharing {
+  text-align: center;
+  padding-bottom: 15px;
 }

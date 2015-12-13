@@ -1,90 +1,26 @@
-/* Global reset
-   http://meyerweb.com/eric/tools/css/reset/ */
+/* landing page */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Styling Start */
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-	margin:0;
-	padding:0;
-	height:100%;
-	width: 100%;
-}
-
-.pagination {
+nav#primary {
 	z-index: 5;
     position: fixed;
     top: 50%;
     right: 16px;
-    margin-top: -40px;
+    margin:0;
 }
 
-.pagination li {
+nav#primary li {
 	position: relative;
 	height: 20px;
 }
 
-.pagination a {
+nav#primary a {
     display: block;
     width: 20px;
     height: 20px;
-    text-indent: -9999px;
-    background: url('img/nav.svg') 4px 4px no-repeat;
+    background: url('nav.svg') 4px 4px no-repeat;
 }
-
-.pagination a:hover, a:visited{
-	background: url('img/nav.svg') 4px -16px no-repeat;
-}
-.pagination a:active{
-	background: url('img/nav.svg') 4px -16px no-repeat;
+nav#primary a:hover, nav#primary a.active {
+	background: url('nav.svg') 4px -16px no-repeat;
 }
 
 #content {
@@ -107,7 +43,7 @@ body {
 	top:0;
 	right:0;
 	width: 100%;
-	height: 91%;
+	height: 100%;
 	background-size: 100% 100%;
 	background-color: black; /* in case the video doesn't fit the whole page*/
 	background-image: /* our video */;
@@ -118,19 +54,45 @@ body {
 	overflow: hidden;
 }
 
-#section0{
+
+#section1,
+#section2,{
 	overflow: hidden;
+	height: 100%;
 }
 
 #section0{
-	overflow: hidden;
+  background-color: purple;
 }
-#section2
-{
-  background-color: white;
+
+
+#section1{
+  background-color: green;
 }
+
+#section2{
+  background-color: red;
+}
+
 #section3{
-  background-color: white;
+  background-color: blue;
+}
+
+
+.sharing a, 
+a:link,
+a:active,
+a:visited {
+	-webkit-transition: color 0.25s ease-out;
+	-moz-transition: color 0.25s ease-out;
+	-o-transition: color 0.25s ease-out;
+	transition: color 0.25s ease-out;
+	color:#21a97e;
+	outline: none;
+	text-decoration:none;
+}
+a:hover { 
+	color:#000;
 }
 
 .sharing img {
@@ -140,11 +102,16 @@ body {
 
 .sharing {
 	text-align: center;
-	padding: 15px 0 200px 0px;
+	padding: 15px 0;
 }
 
 .text-container {
-	padding:10%;
+	margin: 10%;
+    height: 78%;
+}
+
+.text-border {
+	border-left: solid 1px #FF6A00;    
 }
 
 .text-intro {
@@ -153,7 +120,9 @@ body {
 	color: #222222;
 	font-size: 14px;
 	padding: 5% 10%;
-	border-left: solid 1px #FF6A00;
+	overflow: hidden;
+    height: 93%;
+    margin-top: 25%;
 }
 
 .info {
@@ -162,7 +131,7 @@ body {
 	line-height: 25px;
 	color: #222222;
 	font-size: 14px;
-	padding: 21% 200px 0 200px;
+	padding: 250px 10% 0 10%;
 	margin: 0px;
 }
 
@@ -198,3 +167,98 @@ h3 {
     line-height: 30px;
     font-size: 20px;
 }
+
+video::-webkit-media-controls {
+  display:none !important;
+}
+
+/* responsive */
+
+@media screen and (max-width: 800px) {
+    body {
+    }
+
+    .title {
+	width: 320px;
+    padding: 20px;
+    margin:0;
+	}
+
+    .title h1 {
+		font-family: 'Source Sans Pro', sans-serif;
+	    font-weight: 400;
+	    text-transform: capitalize;
+	    color: #FFFFFF;
+	    font-size: 50px;
+	}
+
+	.title h2 {
+		font-family: 'Source Sans Pro', sans-serif;
+	    font-weight: 300;
+	    color: #FFFFFF;
+	    padding: 8px 6px;
+	    line-height: 35px;
+	    font-size: 30px;
+	}
+
+	.text-container {
+		margin: 0px 10%;
+	}
+
+	.text-intro {
+		font-family: 'PT Serif', serif;
+		margin-top: 10%;
+		line-height: 12px;
+		color: #222222;
+		font-size: 10px;
+		padding: 5% 10%;
+		overflow: hidden;
+	}
+
+	.info {
+		font-family: 'PT Serif', serif;
+		text-align: center;
+		line-height: 18px;
+		color: #222222;
+		font-size: 14px;
+		padding: 45% 5% 0 5%;
+		margin: 0px;
+	}
+
+	.sharing img {
+		width:30px;
+	}
+
+	.sharing {
+	text-align: center;
+	padding: 15px 0 100px 0px;
+	}
+
+
+	nav#primary {
+		z-index: 5;
+	    position: fixed;
+	    right:40%;
+	    top: 90%
+	}
+
+	nav#primary li {
+		position: relative;
+		height: 40px;
+	}
+
+	nav#primary a {
+	    display: block;
+	    width: 70px;
+	    height: 50px;
+	    background: url('more-orange.svg') 0px no-repeat;
+	}
+
+	nav#primary a:hover, nav#primary a:active {
+	    display:block;
+	    width: 70px;
+	    height: 50px;
+	    background: url('more-orange.svg') 0px no-repeat;
+	}
+
+} 
