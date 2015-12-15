@@ -1,0 +1,356 @@
+/* Global reset
+   http://meyerweb.com/eric/tools/css/reset/ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* STYLING STICKY NAV */
+
+body {
+  margin: 0;
+  padding-top: 20%;
+}
+
+header {
+  height: 500px;
+  position:relative;
+}
+
+.main-nav,
+.main {
+  position: relative; 
+}
+
+.main-nav {
+  background-color: #222;
+  height: 80px;
+  z-index: 150;
+  border-bottom: solid 1px #FF6A00;
+}
+
+/*header,
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}*/
+
+.main-nav-scrolled {
+  border-bottom: solid 1px #FF6A00;
+}
+
+.main {
+  background-color: #ffffff;
+}
+
+.main-title {
+    float: left;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.links {
+    float: left;
+    padding-top: 42px;
+}
+
+.links a {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000000;
+    text-decoration:none;
+}
+
+.links a:active, a:visited {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-color: #000000;
+}
+
+.links a:hover {
+  color: #666666;
+}
+
+/* STYLING BODY HOME PAGE */
+
+.pagination {
+    z-index: 5;
+    position: fixed;
+    top: 50%;
+    right: 16px;
+    margin-top: -40px;
+}
+
+.pagination li {
+    position: relative;
+    height: 20px;
+}
+
+.pagination a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    background: url('img/nav.svg') 4px 4px no-repeat;
+}
+
+.pagination a:hover, a:visited{
+  background: url('img/nav.svg') 4px -16px no-repeat;
+}
+.pagination a:active{
+  background: url('img/nav.svg') 4px -16px no-repeat;
+}
+
+
+#myVideo{
+  right: 0;
+  bottom: 0;
+  top:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black; /* in case the video doesn't fit the whole page*/
+  background-image: /* our video */;
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover; /*cover video background */
+  z-index:-1;
+  overflow: hidden;
+}
+
+#section{
+  overflow: hidden;
+}
+
+#section0{
+  background-color: none;
+  overflow: scroll;
+}
+
+#section1,
+#section2
+{
+  background-color: pink;
+}
+
+#section3 {
+  background-color: lightblue;
+}
+
+.top{
+}
+
+.title {
+    width: 100%;
+    padding: 40px;
+    margin:0;
+    left: 50%;
+    background-color: red;
+}
+
+.title h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0;
+    color: #fff;
+    font-size: 58px;
+}
+
+.title h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    padding: 8px 6px;
+    line-height: 40px;
+    font-size: 38px;
+}
+
+.video-container {
+}
+
+.down-arrow {
+    position: absolute;
+    width: 40px;
+    bottom: 0;
+    margin:0;
+    left: 50%;
+    background-color: #fff;
+    padding: 10px;
+    opacity: .7;
+    transform: translate(-50%, 0%);
+}
+
+.text-container {
+  /*padding:10%;*/
+}
+
+.text-intro {
+  font-family: 'PT Serif', serif;
+  line-height: 25px;
+  color: #222222;
+  font-size: 14px;
+  padding: 25% 10%;
+  border-left: solid 1px #FF6A00;
+  overflow: scroll;
+}
+
+
+.links-home {
+    /*height: 300px;
+    overflow: hidden;
+    padding: 50px 0;
+    border-bottom: solid 1px #f0f0f0;*/
+}
+
+.divider {
+    float: left;
+    background-color: #FF6A00;
+    height: inherit;
+    width: 1px;
+}
+
+.links-home .link1, .link2{
+    float: left;
+    background-color: #FFFFFF;
+    height: 500px;
+    width: 49.8%;
+    text-align: center;
+}
+
+.links-home .link1 a,
+.link2 a{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+    height: 61px;
+    top: 50%;
+    /*position: relative;*/
+    text-decoration: none;
+}
+
+.links-home .link1 a:hover,
+.link2 a:hover{
+    border-bottom: 3px solid #FF6A00;
+}
+
+.contribute {
+  /*position: relative;*/
+  font-family: 'Source Sans Pro', sans-serif;
+  /*height: 500px;*/
+  text-align: center;
+}
+
+.contribute-content {
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);*/
+}
+
+.contribute p{
+  line-height: 20px;
+}
+
+.contribute-button {
+  position: relative;
+  height: 42px;
+  width: 200px;
+  border: 1px solid #FF6A00;
+  text-align: center;
+  margin: auto;
+  top: 20px;
+}
+
+.contribute-button a {
+  position: absolute;
+  text-decoration: none;
+  color: #000000;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.contribute-button a:hover {
+  color: #444444;
+}
+
+#fullpage img{
+  width:100%;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+    background-color: red;
+    overflow: hidden;
+    bottom: 0;
+}
+
+.footer p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+}
+
+.footer a {
+  width:10px;
+  margin: 0 5px;
+}
+
+.sharing a{
+  width: 30px;
+}
+
+.sharing {
+  text-align: center;
+  padding-bottom: 15px;
+}

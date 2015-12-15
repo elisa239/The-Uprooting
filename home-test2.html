@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title> The Uprooting </title>
+		<link rel="stylesheet" href="style-home-test2.css"/>
+		<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+
+		<!-- jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- sticky nav -->
+		<script src="js/nav.js"></script>
+
+
+		<!-- vertical scroll -->
+		<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+		<script src="js/script.js"></script>
+
+		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+		<!--<script type="text/javascript" src="js/vendor/jquery.slimscroll.min.js"></script>-->
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					verticalCentered: true,
+					scrollOverflow: true,
+				});
+			});
+		</script>
+
+	</head>
+	<body>
+		<div id="fullpage">
+			<div class="section" id="section0">
+					<!--<a href="#section3"><img class="down-arrow" src="img/down-arrow.svg" alt="scroll down"></a>-->
+					<video autoplay loop muted id="myVideo">
+						<source src="mov/theuprooting-intro.mp4">
+						<source src="mov/video-still.png">
+						Your browser does not support the video tag.
+					</video>
+					<nav class="main-nav">
+						<div class="main-title">
+							The <br>
+							Uprooting
+						</div>
+						<div class="links">
+						  <a href="#">About</a> /
+						  <a href="#">Contact</a>
+						</div>
+					</nav>
+					<p class="text-intro">
+						The Uprooting is a multimedia documentary project that explores the refugee crisis through the life-stories of its protagonists. It aims to go beyond the daily headlines and forefront the voices of refugees themselves in an in-depth examination of the traumas of war, the challenges of exile and the contours of an evolving diaspora. The project consists two components. The first and most substantive section is a collection of interviews with a plurality of refugees in different stages of the prolonged and problematic process of migration—beginning with people making arrangements to be smuggled out of Turkey and ending with those who have been granted asylum in countries like Sweden, Switzerland, and Germany.  The Uprooting’s second component displays the work of photographers who have been documenting the crisis in the different places where it continues to unfold.<br> <br>
+						The Uprooting aims to become an open platform so that different actors can make contributions. We hope that more and more refugees, journalists, and photographers add their own stories to this growing polyphonic narrative of mass migration.  
+						</p>
+
+			</div>
+				<div class="section" id="section1">
+					<div class="slide" id="slide1">
+						<img src="img/slide-home/Smuggler-4.jpg">
+					</div>
+					<div class="slide" id="slide2">
+						<img src="img/slide-home/Smuggler-3.jpg">
+					</div>
+					<div class="slide" id="slide3">
+						<img src="img/slide-home/Smuggler-5.jpg">
+					</div>
+				</div>
+				<div class="section" id="section2">
+					<div class="links-home">
+						<div class="link1">
+							<a href="#"> Stories </a>
+						</div>
+						<div class="divider">
+						</div>
+						<div class="link2">
+							<a href="#"> Places </a>
+						</div>
+					</div>
+					<div class="contribute">
+						<div class="contribute-content">
+							<p> The Uprooting is an archive of stories from the refugees. <br> To submit your story, click the button below </p>
+							<div class="contribute-button">
+								<a href="#">  Contribute </a>
+							</div>
+						</div>
+					</div>
+					<div class="footer">
+						<!--<div class="sharing">
+							<a href="http://www.facebook.com/sharer.php?u=theuprooting.eu"> <img src="img/Facebook-Icon.png"></a>
+							<a href="https://twitter.com/share"><img src="img/Twitter-Icon.png"></a>
+							<a href="https://www.pinterest.com/pin/create/button/"><img src="img/Pintrest-Icon.png"></a>
+						</div>-->
+						<p>&copy; 2015 The Uprooting all rights reserved </p>
+					</div>
+				</div>
+			</div>
+			
+	</body>
+</html>
