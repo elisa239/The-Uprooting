@@ -234,6 +234,14 @@ header,
     border-bottom: 3px solid #FF6A00;
 }
 
+#section0 {
+  height: 200px !important;
+}
+
+#section0 img{
+  width:100%;
+}
+
 .contribute {
   position: relative;
   font-family: 'Source Sans Pro', sans-serif;
@@ -419,7 +427,6 @@ footer,
   top: 0;
   line-height: 22px;
   padding: 10px 0;
-  border-bottom: 1px solid #000;
 }
 
 .info {
@@ -428,19 +435,63 @@ footer,
 
 /* STYLING ARTICLE */
 .article-title {
-  float: left;
-  width: 100%;
+  width: 14%;
+  margin: 0 67px;
+  padding: 20px 0;
 }
 
 .article-title h1 {
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   font-size: 24px;
-  padding: 0 25px;
+}
+
+.share-links a{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  color: #222;
+  text-decoration:none;
+}
+
+.share-links a:hover{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  color: #FF6A00;
+  text-decoration:none;
+}
+
+.title-divider {
+  border-bottom: 1px solid;
+  margin: 11px 0;
+}
+
+.article-graphic {
+  float: right;
+  position: relative;
+  width: 25%;
+}
+
+.article-graphic img {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.graphic-divider {
+  height: 900px;
+  margin: 0 50%;
+  display: block;
+  color: #FF6A00;
+  border-left: solid 1px;
 }
 
 .sharing-article {
-  padding: 40px 0px;
+  float: right;
+  display: -webkit-inline-box;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, 50%);
 }
 
 .sharing-article img{
@@ -465,18 +516,16 @@ footer,
   font-family: 'PT Serif', serif;
   font-size: 13px;
   line-height: 16px;
-  padding: 15px;
-  margin: 10px;
+  padding: 0 15px 60px 15px;
+  margin: 0 50px;
   width: 70%;
 }
 
 .caption-article {
   font-family: 'PT Serif', serif;
   font-size: 10px;
-  width: 94.5%;
+  float: left;
   display: inline-block;
-  font-color: red;
-  border: 1px solid;
   background-color: white;
   bottom: 0;
   left: 0;
@@ -485,8 +534,9 @@ footer,
 
 .pull-quote {
   font-size: 16px;
+  line-height:20px;
   width: 60%;
-  border-left: 1px solid red;
+  border-left: 1px solid #FF6A00;
   padding: 25px;
   margin:25px;
 }
@@ -495,7 +545,6 @@ footer,
   display: -webkit-inline-box;
   width: 40%;
   float: left;
-  background-color: red;
   overflow: hidden;
   margin: 0 25px 25px 0;
 }
@@ -504,7 +553,6 @@ footer,
 .image-small-right {
   display: -webkit-inline-box;
   width: 25%;
-  background-color: red;
   overflow: hidden;
 }
 
@@ -518,12 +566,10 @@ footer,
   margin: 25px 25px 25px 0;
 }
 
-.text-article {
+.article-text {
   font-family: 'PT Serif', serif;
-  font-size: 13px;
-  line-height: 16px;
-  width: 42%;
-  float: left;
-  padding: 0 20px;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 20px 0px;
 }
 }
