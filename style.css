@@ -436,7 +436,29 @@ footer,
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   font-size: 24px;
-  padding: 25px;
+  padding: 0 25px;
+}
+
+.sharing-article {
+  padding: 40px 0px;
+}
+
+.sharing-article img{
+  float: left;
+  width: 20px !important;
+  margin: 0 2px;
+}
+
+.sharing-article a {
+  opacity: 0.4;
+}
+
+.sharing-article a:hover{
+  opacity: 1;
+}
+
+.image-article img{
+  width:100%;
 }
 
 .img-article-main {
@@ -451,25 +473,49 @@ footer,
 .caption-article {
   font-family: 'PT Serif', serif;
   font-size: 10px;
-  float: left;
+  width: 94.5%;
+  display: inline-block;
   font-color: red;
   border: 1px solid;
-  width: 14%;
-  float: left;
-  height: 337px;
-  z-index: -50;
+  background-color: white;
+  bottom: 0;
+  left: 0;
   padding: 10px;
-  margin: 0 20px 10px 0;
 }
 
-.image {
-  width:inherit;
+.pull-quote {
+  font-size: 16px;
+  width: 60%;
+  border-left: 1px solid red;
+  padding: 25px;
+  margin:25px;
 }
 
-.img-article-main img {
-  width: 34%;
+.image-large {
+  display: -webkit-inline-box;
+  width: 40%;
   float: left;
-  padding: 0 20px 12px 0px;
+  background-color: red;
+  overflow: hidden;
+  margin: 0 25px 25px 0;
+}
+
+.image-small-left,
+.image-small-right {
+  display: -webkit-inline-box;
+  width: 25%;
+  background-color: red;
+  overflow: hidden;
+}
+
+.image-small-right {
+  float: right;
+  margin: 25px;
+}
+
+.image-small-left {
+  float: left;
+  margin: 25px 25px 25px 0;
 }
 
 .text-article {
