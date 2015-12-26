@@ -15,15 +15,33 @@
 		<!-- mansonry -->
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
+		<script src="js/vendor/imagesloaded.pkgd.js"></script>
 		
 		<script type="text/javascript">
 		</script>
 
 		<script type="text/javascript">
-			$(window).load(function(){   $('#content').masonry(); });
-		</script>
+			var msnry;
 
-		<script src="js/vendor/masonry-fix.js">
+			function triggerMasonry() {
+			  // don't proceed if masonry has not been initialized
+			  if ( !msnry ) {
+			    return;
+			  }
+			  msnry.layout();
+			}
+			// initialize masonry on document ready
+			docReady( function() {
+			  var container = document.querySelector('.grid');
+			  msnry = new Masonry( container, {
+			    // options...
+			  });
+			});
+			// trigger masonry when fonts have loaded
+			Typekit.load({
+			  active: triggerMasonry,
+			  inactive: triggerMasonry
+			}); 
 		</script>
 	</head>
 	<body>
@@ -52,13 +70,15 @@
 				<!-- row 1 -->
 				<div class="grid-sizer"></div>
 		  		<div class="grid-item grid-item--width1">
+		  			<div class="overlay">
+		  				<span class="quote"> "here goes the quote" </span>
+		  			</div>
 		  			<img src="img/stories/Firas-1.jpg">
 		  			<div class="caption">
 		  				<h1> FIRAS ALSHATER </h1>
 		  				<div class="info">
-			  				<p> Origin: Syria </p>
-			  				<p> Destination: Berlin </p>
-			  				<p> Age: 24 years old </p>
+			  				<p> From: Syria </p>
+			  				<p> Interviewed in: Berlin </p>
 			  			</div>
 		  			</div>
 		  		</div>
@@ -67,9 +87,8 @@
 		  			<div class="caption">
 		  				<h1> GHANEM AL HAMWY </h1>
 		  				<div class="info">
-			  				<p> Origin: Syria </p>
-			  				<p> Destination: Berlin </p>
-			  				<p> Age: 24 years old </p>
+			  				<p> From: Syria </p>
+			  				<p> Interviewed in: Berlin </p>
 			  			</div>
 		  			</div>
 		  		</div>
@@ -78,9 +97,8 @@
 		  			<div class="caption">
 		  				<h1> OMAR JOMAA </h1>
 		  				<div class="info">
-			  				<p> Origin: Syria </p>
-			  				<p> Destination: Berlin </p>
-			  				<p> Age: 24 years old </p>
+		  					<p> From: Turkey </p>
+			  				<p> Interviewed in: Turkey </p>
 			  			</div>
 		  			</div>
 		  		</div>
@@ -91,9 +109,8 @@
 		  			<div class="caption">
 		  				<h1> ALI RAHAB </h1>
 		  				<div class="info">
-			  				<p> Origin: Syria </p>
-			  				<p> Destination: Berlin </p>
-			  				<p> Age: 24 years old </p>
+			  				<p> From: Syria </p>
+			  				<p> Interviewed in: Switzerland </p>
 			  			</div>
 		  			</div>
 		  		</div>
@@ -103,9 +120,8 @@
 		  			<div class="caption">
 		  				<h1> AL KHAL </h1>
 		  				<div class="info">
-			  				<p> Origin: Syria </p>
-			  				<p> Destination: Berlin </p>
-			  				<p> Age: 24 years old </p>
+			  				<p> From: Turkey </p>
+			  				<p> Interviewed in: Sweden </p>
 			  			</div>
 		  			</div>
 		  		</div>
@@ -114,9 +130,8 @@
 		  			<div class="caption">
 		  				<h1> TAIM AL SHAMI </h1>
 		  				<div class="info">
-			  				<p> Origin: Syria </p>
-			  				<p> Destination: Berlin </p>
-			  				<p> Age: 24 years old </p>
+			  				<p> From: Greece </p>
+			  				<p> Interviewed in: Berlin </p>
 			  			</div>
 		  			</div>
 		  		</div>
@@ -127,9 +142,8 @@
 		  			<div class="caption">
 		  				<h1> HANIBAL </h1>
 		  				<div class="info">
-			  				<p> Origin: Syria </p>
-			  				<p> Destination: Berlin </p>
-			  				<p> Age: 24 years old </p>
+			  				<p> From: Turkey </p>
+			  				<p> Interviewed in: Sweden </p>
 			  			</div>
 		  			</div>
 		  		</div>
@@ -138,9 +152,8 @@
 		  			<div class="caption">
 		  				<h1> LEEN HADIDI </h1>
 		  				<div class="info">
-		  					<p> Name: Firaz </p>
-		  					<p> Origin: Turkey </p>
-		  					<p> Destination: Berlin </p>
+		  					<p> From: Syria </p>
+			  				<p> Interviewed in: Berlin </p>
 		  				</div>
 		  			</div>
 		  		</div>
@@ -149,9 +162,8 @@
 		  			<div class="caption">
 		  				<h1> KHALEN ALMASRI </h1>
 		  				<div class="info">
-		  					<p> Name: Firaz </p>
-		  					<p> Origin: Turkey </p>
-		  					<p> Destination: Berlin </p>
+		  					<p> From: Turkey </p>
+			  				<p> Interviewed in: Switzerland </p>
 		  				</div>
 		  			</div>
 		  		</div>

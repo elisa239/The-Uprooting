@@ -37,68 +37,23 @@
 				});
 			});
 		</script>
-		<!--<script type="text/javascript">
-		    function vidplay() {
-		       var video = document.getElementById("myVideo");
-		       var button = document.getElementById("mute");
-		       if (video.paused) {
-		          video.play();
-		          button.textContent = "||";
-		       } else {
-		          video.pause();
-		          button.textContent = ">";
-		       }
-		    }      
-		</script>-->
-
-		<!--<script type="text/javascript">
-		       var video = document.getElementById("myVideo");
-		       var audioElm = document.getElementById("audio1");
-		        button.addEventListener("click", function () {
-			      if (audioElm.muted == true) {
-			        audioElm.muted = false;
-			      } else {
-			        audioElm.muted = true;
-			      }
-			    }, false);
-		</script>-->
-
-		<!-- <script type="text/javascript">
-        	function init() {        // Master function, encapsulates all functions
-            var video = document.getElementById("myVideo");                                               
-            document.getElementById("mute").addEventListener("click", function (evt) {
-	                    if (video.muted) {
-	                        video.muted = false;
-	                        evt.target.innerHTML = "<img alt='volume on button' src='vol2.png' />"
-	                    } else {
-	                        video.muted = true;
-	                        evt.target.innerHTML = "<img alt='volume off button' src='mute2.png' />"
-	                    }
-                	}, false);
-            	} // end of runtime
-        	}// end of master         
-    	</script> -->
 	</head>
 	<body>
+		<div class="video-container">
+			<a href="#section2">
+					<img class="down-arrow-video" src="img/down-arrow.svg">
+			</a>
+			<video id="myVideo" poster="mov/theuprooting-mov-still.png" width="400px" autoplay loop muted>		
+				<source src="mov/theuprooting-intro.mp4">
+				<source src="mov/theuprooting-mov-still.png">
+				Your browser does not support the video tag.
+			</video>
+		</div>
 		<div id="fullpage">
 			<div class="section" id="section0">
-					<a href="#section2">
-						<img class="down-arrow" src="img/down-arrow.svg">
-					</a>
-					<!--<div id="buttonbar">
-					    <button id="mute">&gt;</button>
-					</div>-->
-					<video id="myVideo" poster="mov/theuprooting-mov-still.png" controls autoplay loop muted>
-						<source src="mov/theuprooting-intro.mp4">
-						<source src="mov/theuprooting-mov-still.png">
-						Your browser does not support the video tag.
-					</video>
 					  
 			</div>
 			<div class="section" id="section1">
-				<a href="#section2">
-					<img class="down-arrow" src="img/down-arrow.svg">
-				</a>
 				<div class="title">
 					<h1> THE UPROOTING </h1>
 					<h2> Voices from the </br> Refugee Crisis </h2>
@@ -116,10 +71,10 @@
 				</div>
 			</div>
 			<div class="section" id="section3">
-				<a href="#section0">
+				<a href="#section1">
 					<img class="down-arrow" src="img/up-arrow.svg">
 				</a>
-				<p class="info">
+				<p class="info-landing">
 						The Uprooting website will be released this December 2015. </br>
 						Please visit our <a href="https://www.facebook.com/groups/theuprooting/">facebook</a> for more information.
 						<nav class="sharing">
