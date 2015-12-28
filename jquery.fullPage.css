@@ -78,20 +78,24 @@ html.fp-enabled,
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    opacity:.7;
-    left: 15px;
-    width: 0;
-    border-width: 25.5px 26px 25.5px 0;
-    /*border-width: 38.5px 34px 38.5px 0;*/
-    border-color: transparent #fff transparent transparent;
+    opacity: .7;
+    left:0;
+    width: 40px;
+    height: 40px;
+    background-image: url("img/arrow-left.svg");
+    z-index: 1000;
+    display: block;
 }
 .fp-controlArrow.fp-next {
-    opacity:.7;
-    right: 15px;
-    border-width: 25.5px 0px 25.5px 26px;
-    /*border-width: 38.5px 0 38.5px 34px;*/
-    border-color: transparent transparent transparent #fff;
+    opacity: .7;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url("img/arrow-right.svg");
+    z-index: 1000;
+    display: block;
 }
+
 .fp-scrollable {
     overflow: scroll;
 }
