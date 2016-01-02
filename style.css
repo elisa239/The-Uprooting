@@ -552,6 +552,12 @@ footer,
   min-height: 1200px;
 }
 
+#section-places img {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* STYLING ARTICLE */
 .article-title {
