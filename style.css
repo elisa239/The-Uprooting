@@ -230,11 +230,9 @@ header .stories{
 }
 
 #section0 {
-  height: 500px !important;
 }
 
 #section0 img{
-  width:100%;
 }
 
 .contribute {
@@ -281,10 +279,11 @@ header .stories{
 }
 
 #fullpage {
-  height: inherit;
 }
 
 #fullpage img{
+  position:absolute;
+  top: 0;
 }
 
 .footer {
@@ -292,6 +291,17 @@ header .stories{
   padding: 20px;
   text-align: center;
   border-top: 1px solid #f0f0f0;
+}
+
+.caption-home {
+  background-color: #d0d0d0;
+  z-index: 1;
+  display: table-cell;
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  padding: 10px;
 }
 
 /* STICKY FOOTER */
