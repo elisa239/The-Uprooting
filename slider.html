@@ -30,7 +30,6 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				anchors: ['firstPage'],
-				sectionsColor: ['#4A6FB1'],
 				autoScrolling: false,
 				css3: true,
 				fitToSection: false
@@ -42,16 +41,22 @@
 	<body>
 		<div class="main">
 			<div id="fullpage">
-				<img class="close" src="img/icons/close.svg"> 
-				<div class="section" id="section-places">
+				<div class="section" id="section-slider">
+					<a href="close-button">
+						<img class="close" src="img/icons/close.svg">
+					</a>
 					<div class="slide slider">
 						<img src="img/slide-home/Smuggler-4.jpg">
+						<p> Here goes the caption for this image </p>
 					</div>
 					<div class="slide slider">
 						<img src="img/slide-home/Smuggler-3.jpg">
+						<p> Here goes the caption for this image </p>
 					</div>
 					<div class="slide slider">
 						<img src="img/slide-home/Smuggler-5.jpg">
+						<p> Here goes the caption for this image </p>
+					</div>
 					</div>
 				</div>
 			</div>

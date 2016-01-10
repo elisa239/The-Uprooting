@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> The Uprooting - About</title>
+		<link rel="stylesheet" href="style.css">
+
+
+		<!-- jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- sticky nav -->
+		<script src="js/nav.js"></script>
+
+
+		<!-- mansonry -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
+		<script src="js/vendor/imagesloaded.pkgd.js"></script>
+		
+		<script type="text/javascript">
+		</script>
+
+		<script type="text/javascript">
+			var msnry;
+
+			function triggerMasonry() {
+			  // don't proceed if masonry has not been initialized
+			  if ( !msnry ) {
+			    return;
+			  }
+			  msnry.layout();
+			}
+			// initialize masonry on document ready
+			docReady( function() {
+			  var container = document.querySelector('.grid');
+			  msnry = new Masonry( container, {
+			    // options...
+			  });
+			});
+			// trigger masonry when fonts have loaded
+			Typekit.load({
+			  active: triggerMasonry,
+			  inactive: triggerMasonry
+			}); 
+		</script>
+	</head>
+	<body>
+		<header class="stories">
+			
+		</header>
+		<nav class="main-nav">
+			<div class="main-title">
+				The </br>
+				Uprooting
+			</div>
+			<div class="links">
+			  	<a href="#">Stories</a> /
+			  	<a href="#">Places</a> /
+			  	<a href="#">About</a> /
+			  	<a href="#">Contribute</a>
+			  	<nav class="sharing-inner">
+					<a href="http://www.facebook.com/sharer.php?u=theuprooting.eu"> <img src="img/Facebook-Icon.png"></a>
+					<a href="https://twitter.com/share"><img src="img/Twitter-Icon.png"></a>
+					<a href="https://www.pinterest.com/pin/create/button/"><img src="img/Pintrest-Icon.png"></a>
+				</nav>
+			</div>
+		</nav>
+			<div class="about-content">
+					<p> The Uprooting is a multimedia documentary project that explores the refugee crisis through the life-stories of its protagonists. It aims to go beyond the daily headlines and forefront the voices of refugees themselves in an in-depth examination of the traumas of war, the challenges of exile and the contours of an evolving diaspora.  </p>
+			</div>
+			<div class="stories-content">
+				<div class="grid js-masonry" data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer" "isFitWidth:true"}'>
+					<div class="grid-sizer"></div>
+
+			  		<!-- image1 -->
+			  		<div class="grid-item grid-item--about">
+			  			<div class="image-about">
+				  			<img src="img/stories/Firas-1.jpg">
+				  		</div>
+				  		<div class="caption-about">
+			  				<h1> MIGUEL WINOGRAD </h1>
+			  				<div class="info">
+				  				<p> Photographer </p>
+				  			</div>
+			  			</div>
+			  		</div>
+
+			  		<!-- image2 -->
+			  		<div class="grid-item grid-item--about">
+			  			<div class="image-about">
+				  			<img src="img/stories/Firas-1.jpg">
+				  		</div>
+				  		<div class="caption-about">
+			  				<h1> LOUBNA </h1>
+			  				<div class="info">
+				  				<p> Photographer </p>
+				  			</div>
+			  			</div>
+			  		</div>
+
+			  		<!-- image3 -->
+			  		<div class="grid-item grid-item--about">
+			  			<div class="image-about">
+				  			<img src="img/stories/Firas-1.jpg">
+				  		</div>
+				  		<div class="caption-about">
+			  				<h1> ELISA WINOGRAD </h1>
+			  				<div class="info">
+				  				<p> Front-end developer and designer </p>
+				  			</div>
+			  			</div>
+			  		</div>
+
+			  		<!-- image4 -->
+			  		<div class="grid-item grid-item--about">
+			  			<div class="image-about">
+				  			<img src="img/stories/Firas-1.jpg">
+				  		</div>
+				  		<div class="caption-about">
+			  				<h1> Patrick Maccarthy </h1>
+			  				<div class="info">
+				  				<p> Back-end developer </p>
+				  			</div>
+			  			</div>
+			  		</div>
+
+			  		<!-- image5 -->
+			  		<div class="grid-item grid-item--about">
+			  			<div class="image-about">
+				  			<img src="img/stories/Firas-1.jpg">
+				  		</div>
+				  		<div class="caption-about">
+			  				<h1> Axel Ölberg </h1>
+			  				<div class="info">
+				  				<p> Photographer </p>
+				  			</div>
+			  			</div>
+			  		</div>
+
+			  		<!-- image6 -->
+			  		<div class="grid-item grid-item--about">
+			  			<div class="image-about">
+				  			<img src="img/stories/Firas-1.jpg">
+				  		</div>
+				  		<div class="caption-about">
+			  				<h1> Muhammed ElShami </h1>
+			  				<div class="info">
+				  				<p> Photographer </p>
+				  			</div>
+			  			</div>
+			  		</div>
+			  	</div>
+		</div>
+		<div class="footer-inner">
+			<p>&copy; 2015 The Uprooting all rights reserved </p>
+			</div>
+		</div>
+	</body>
+</html>

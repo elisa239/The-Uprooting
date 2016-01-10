@@ -62,6 +62,7 @@ header .stories{
 
 .main-nav,
 .main {
+  width:100%;
   position: relative; 
 }
 
@@ -281,7 +282,7 @@ header .stories{
 #fullpage {
 }
 
-#fullpage img{
+#fullpage .slide img{
   /*position:absolute;*/
   width: 100%;
   display: block;
@@ -392,6 +393,11 @@ footer,
   background-color: none;
 }
 
+.grid-sizer { 
+  width: 10px; 
+  background-color: red;
+}
+
 .grid-item {
   background-color: none;
 }
@@ -401,7 +407,7 @@ footer,
     font-size: 14px;
     width: 100%;
     position: absolute;
-    background: rgba(0,0,0,1);
+    background: rgba(0,0,0,1 );
     color: #ffffff;
     cursor: pointer;
     text-align: center;
@@ -433,15 +439,9 @@ footer,
   padding: 30px;
 }
 
-.grid-item--width1 { 
-  width: 20%;
-  overflow: hidden;
-  margin: 30px;
-}
-
-.grid-item--width1 img,
-.grid-item--width2 img,
-.grid-item--width3 img {
+.grid-item--stories1 img,
+.grid-item--stories2 img,
+.grid-item--stories3 img {
   width: 100%;
   overflow: hidden;
 }
@@ -450,13 +450,19 @@ footer,
   overflow: hidden;
 }
 
-.grid-item--width2 { 
+.grid-item--stories1 { 
+  width: 20%;
+  overflow: hidden;
+  margin: 30px;
+}
+
+.grid-item--stories2 { 
   width: 49%;
   margin: 30px 10px;
   overflow: hidden;
 }
 
-.grid-item--width3 { 
+.grid-item--stories3 { 
   width: 20%;
   background-color: none;
   overflow: hidden;
@@ -464,12 +470,7 @@ footer,
 }
 
 
-.grid-sizer { 
-  width: 0.2%; 
-  background-color: red;
-}
-
-.caption {
+.caption-stories {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   top: 0;
@@ -477,7 +478,7 @@ footer,
   line-height: 18px;
 }
 
-.caption h1{
+.caption-stories h1{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   top: 0;
@@ -545,11 +546,28 @@ footer,
   min-height: 1200px;
 }
 
-#section-places img {
+#section-slider .slider 
+img{
   width: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.slider p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  padding-top: 10px;
+  color: #666;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.close {
+  position: absolute;
+  right: 0;
 }
 
 /* STYLING ARTICLE */
@@ -825,6 +843,54 @@ h3 {
   padding: 8px 6px;
   line-height: 30px;
   font-size: 20px;
+}
+
+/* ABOUT */
+.stories-content {
+}
+
+.about-content{
+  width: 52%;
+  display: block;
+  margin: 30px 50px;
+  border-left: 1px solid #ff6a00;
+}
+
+.about-content p {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 20px;
+}
+
+.grid-item--about { 
+  overflow: hidden;
+  padding: 20px;
+  width: 20%;
+}
+
+.grid-item--about img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-about {
+}
+
+.caption-about {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.caption-about h1{
+  font-size: 16px;
+  text-transform: uppercase;
+  top: 0;
+  line-height: 22px;
+  padding: 10px 0;
+  border-bottom: 1px solid;
+}
+
+.caption-about p{
+  width:100%;
+  font-size: 14px;
 }
 
 /* SLIDESHOW */
