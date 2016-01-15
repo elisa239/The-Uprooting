@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> The Uprooting - Contribute </title>
+		<link rel="stylesheet" href="style.css">
+
+
+		<!-- jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- sticky nav -->
+		<script src="js/nav.js"></script>
+
+		<!-- captcha for contact form -->
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+
+	</head>
+	<body>
+		<header class="stories">
+			
+		</header>
+		<nav class="main-nav">
+			<div class="main-title">
+				The </br>
+				Uprooting
+			</div>
+			<div class="links">
+			  	<a href="#">Stories</a> /
+			  	<a href="#">Places</a> /
+			  	<a href="#">About</a> /
+			  	<a href="#">Contribute</a>
+			  	<nav class="sharing-inner">
+					<a href="http://www.facebook.com/sharer.php?u=theuprooting.eu"> <img src="img/Facebook-Icon.png"></a>
+					<a href="https://twitter.com/share"><img src="img/Twitter-Icon.png"></a>
+					<a href="https://www.pinterest.com/pin/create/button/"><img src="img/Pintrest-Icon.png"></a>
+				</nav>
+			</div>
+		</nav>
+		<div id="contact">
+		      <p class="contact-text">
+		        This part of the website is for people who want to contribute to the project. We want to expand the content of the website and capture as many stories and places as we can. Feel free to use this form to get in contact with us about the project in general as well. We look forward to hearing back from you!
+		      </p>
+		      <div id="contact-area">
+		        <form method="post" action="contactengine.php">
+		          <table class="contact">
+		            <tr>
+		              <td class="left"><label class="contact-lable" for="Name">Name:</label>
+		                <input type="text" name="Name" placeholder="John Brown" required />
+		              </td>           
+		            </tr>
+		            <tr>
+		              <td class="left"><label class="contact-lable" for="Email">Email:</label>
+		                 <input class="text" type="email" name="Email" placeholder="john@example.com" required/>
+		              </td>
+		            </tr>
+		            <tr>
+		              <td class="left"><label class="contact-lable" for="Message">Message:</label>
+		                 <textarea name="Message" rows="20" cols="20" placeholder="Please tell us what you think" required></textarea>
+		              </td>
+		            </tr>
+		          </table>
+		          <div id="captcha-area">
+		              <div class="g-recaptcha" data-sitekey="6Ldm4RQTAAAAABcld5nCtbGT8AhF0iNb6H3d3en1"></div> 
+		          </div> 
+		          <input class="submit" type="submit" name="submit" value="submit" class="submit-button" />
+
+		        </form>
+
+		      </div>
+    	</div>
+		<div class="footer-inner">
+			<p>&copy; 2015 The Uprooting all rights reserved </p>
+			</div>
+		</div>
+	</body>
+</html>
