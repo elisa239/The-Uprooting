@@ -36,6 +36,11 @@
 				fitToSection: false
 			});
 		});
+
+		$('#setKeyboardScrollingTrue').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setKeyboardScrolling(true);
+			});
 		</script>
 
 	</head>
@@ -43,7 +48,7 @@
 		<header class="home">
 		<div class="video-container">
 			<img class="down-arrow-home" src="img/down-arrow.svg">
-			<video autoplay loop muted id="myVideo-home">
+			<video autoplay loop muted controls id="myVideo-home">
 				<source src="mov/theuprooting-intro.mp4">
 			</video>
 		</div>			
@@ -77,51 +82,57 @@
 				<div class="section" id="section-home">
 					<!-- image -->
 					<div class="slide">
-						<img src="img/slide-home/IntroSlideshow-1.jpg">
-						<p> Here goes the caption for this image </p>
+						<img src="img/slide-home/IntroSlideshow-2.jpg">
+						<div class="slide-caption"><p> Here goes the caption for this image </p></div>
 					</div>
 
 					<!-- image -->
 					<div class="slide">
 						<img src="img/slide-home/IntroSlideshow-2.jpg">
+						<div class="slide-caption"><p> Here goes the caption for this image </p></div>
+					</div>
+
+					<!-- image 
+					<div class="slide">
+						<img src="img/slide-home/IntroSlideshow-2.jpg">
 						<p> Here goes the caption for this image </p>
 					</div>
 
-					<!-- image -->
+					
 					<div class="slide">
 						<img src="img/slide-home/IntroSlideshow-3.jpg">
 						<p> Here goes the caption for this image </p>
 					</div>
 
-					<!-- image -->
+					
 					<div class="slide">
 						<img src="img/slide-home/IntroSlideshow-4.jpg">
 						<p> Here goes the caption for this image </p>
 					</div>
 
-					<!-- image -->
+					
 					<div class="slide">
 						<img src="img/slide-home/IntroSlideshow-5.jpg">
 						<p> Here goes the caption for this image </p>
 					</div>
 
-					<!-- image -->
+					
 					<div class="slide">
 						<img src="img/slide-home/IntroSlideshow-6.jpg">
 						<p> Here goes the caption for this image </p>
 					</div>
 
-					<!-- image -->
+					
 					<div class="slide">
 						<img src="img/slide-home/IntroSlideshow-7.jpg">
 						<p> Here goes the caption for this image </p>
 					</div>
 
-					<!-- image -->
+					
 					<div class="slide">
 						<img src="img/slide-home/IntroSlideshow-8.jpg">
 						<p> Here goes the caption for this image </p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="links-home">
@@ -136,10 +147,7 @@
 			</div>
 			<div class="contribute">
 				<div class="contribute-content">
-					<p> The Uprooting is an archive of stories from the refugees. </br> To submit your story, click the button below </p>
-					<div class="contribute-button">
-						<a href="#">  Contribute </a>
-					</div>
+					<p> The Uprooting is a collection of refugees' stories. </br> For more information email example@example.com </p>
 				</div>
 			</div>
 			<div class="footer">

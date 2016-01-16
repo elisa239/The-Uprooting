@@ -257,7 +257,7 @@ header .stories{
 }
 
 #section-home img{
-  height: 88%;
+  height: 80%;
 }
 
 .contribute {
@@ -307,10 +307,10 @@ header .stories{
 }
 
 #fullpage .slide img{
+  float: left;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  top: 0;
+  position: relative;
+  left: 250px;
 }
 
 .footer {
@@ -337,11 +337,12 @@ header .stories{
   width: 100%;
 }
 
+
+
 /* STICKY FOOTER */
 
 .footer-inner {
   position: relative; 
-  width: 100%;
   padding: 20px;
   text-align: center;
   background: #fff;
@@ -393,12 +394,12 @@ footer,
   background-color: none;
 }
 
-.image-text {
+.image-text1,
+.image-text2,
+.image-text3 {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 14px;
-    width: 100%;
+    font-size: 14px;   
     position: absolute;
-    background: rgba(0,0,0,0.7);
     color: #ffffff;
     cursor: pointer;
     text-align: center;
@@ -408,21 +409,55 @@ footer,
     bottom: 0;
     opacity: 0;
     overflow: hidden;
+    background: -webkit-linear-gradient(#000 , #000 , transparent);
+    background: -o-linear-gradient(#000 , #000 , transparent);
+    background: -moz-linear-gradient(#000 , #000 , rgb (255, 0, 0, 0));
+    background: linear-gradient(#000 , #000 , transparent);
 }
 
-.image-text span {
+.image-text1, {
+    height: inherit;
+}
+
+.image-text2 {
+    height: 74%;
+}
+
+.image-text3 {
+    height: 60%;
+}
+
+.image-text1 span,
+.image-text2 span,
+.image-text3 span {
     display: block;
     line-height: 1.4;
 }
 
-.image-text:hover {
+.image-text1:hover,
+.image-text2:hover,
+.image-text3:hover {
     opacity: 1;
 }
 
-.image-text-inner {
-    width: 100%;
+.image-text-inner1 {
+    height: 79%;
     position: absolute;
-    top: 50%;
+    top: 70%;
+    transform: translateY(-50%);
+}
+
+.image-text-inner2 {
+    height: 79%;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+}
+
+.image-text-inner3 {
+    height: 59%;
+    position: absolute;
+    top: 49%;
     transform: translateY(-50%);
 }
 
@@ -545,16 +580,26 @@ img{
   margin-right: auto;
 }
 
+.slide-caption {
+  float: left;
+  position: relative;
+  height: 80%;
+  width: 200px;
+}
+
 .slide p,
 .slider p {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
-  padding: 15px 0px;
-  color: #666;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    font-family: 'PT Serif', serif;
+    position: absolute;
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+    display: block;
+    bottom: 0;
+    left: 265px;
+    width: 200px;
+    line-height: 16px;
+}
 }
 
 .close {
