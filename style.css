@@ -351,13 +351,10 @@ header .stories{
   border-top: 1px solid #d0d0d0;
 }
 
-.footer-inner {
-}
 
 footer,
 .footer-inner-scrolled {
   position: fixed;
-  width: 100%;
   bottom: 0;
 }
 
