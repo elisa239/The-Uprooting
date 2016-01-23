@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<title> The Uprooting </title>
-		<link rel="stylesheet" href="style.css"/>
-		<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 
 		<!-- jquery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -14,40 +14,31 @@
 		<!-- fonts -->
 		<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 
-		<!-- vertical scroll -->
-		<script src="js/script.js"></script>
-
 		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 		<script type="text/javascript" src="js/vendor/jquery.slimscroll.min.js"></script>
 
-		<!-- jquery waypoints -->
-
-		<script src="/path/to/lib/jquery.waypoints.min.js"></script>
-		<script src="/path/to/shortcuts/sticky.min.js"></script>
 
 		<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['firstPage'],
-				sectionsColor: ['#fff'],
-				autoScrolling: false,
-				css3: true,
-				fitToSection: false
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					sectionsColor: ['#fff'],
+					autoScrolling: false,
+					css3: true,
+					fitToSection: false
+				});
 			});
-		});
 
-		$('#setKeyboardScrollingTrue').click(function(e){
-				e.preventDefault();
-				$.fn.fullpage.setKeyboardScrolling(true);
-			});
+			$('#setKeyboardScrollingTrue').click(function(e){
+					e.preventDefault();
+					$.fn.fullpage.setKeyboardScrolling(true);
+				});
 		</script>
-
 	</head>
 	<body>
 		<header class="home">
 		<div class="video-container">
-			<img class="down-arrow-home" src="img/down-arrow.svg">
+			<img class="down-arrow-home" src="img/icons/slideshow/down-arrow.svg">
 			<video autoplay loop muted controls id="myVideo-home">
 				<source src="mov/theuprooting-intro.mp4">
 			</video>
@@ -55,8 +46,8 @@
 		</header>
 		<nav class="main-nav">
 			<div class="main-title">
-				<a href="#">The </br>
-				Uprooting</a>
+				The </br>
+				Uprooting
 			</div>
 			<div class="links">
 				<div class="nav-links">
@@ -65,9 +56,9 @@
 			 		<a href="about.html">About</a>
 			 	</div>
 			  	<nav class="sharing-inner">
-					<a href="http://www.facebook.com/sharer.php?u=theuprooting.eu"> <img src="img/Facebook-Icon.png"></a>
-					<a href="https://twitter.com/share"><img src="img/Twitter-Icon.png"></a>
-					<a href="https://www.pinterest.com/pin/create/button/"><img src="img/Pintrest-Icon.png"></a>
+					<a href="http://www.facebook.com/sharer.php?u=theuprooting.eu"> <img src="img/icons/social/Facebook-Icon.png"></a>
+					<a href="https://twitter.com/share"><img src="img/icons/social/Twitter-Icon.png"></a>
+					<a href="https://www.pinterest.com/pin/create/button/"><img src="img/icons/social/Pintrest-Icon.png"></a>
 				</nav>
 			</div>			
 		</nav>
@@ -137,17 +128,17 @@
 			</div>
 			<div class="links-home">
 				<div class="link1">
-					<a href="#"> Stories </a>
+					<a href="stories.html"> Stories </a>
 				</div>
 				<div class="divider">
 				</div>
 				<div class="link2">
-					<a href="#"> Places </a>
+					<a href="places.html"> Places </a>
 				</div>
 			</div>
 			<div class="contribute">
 				<div class="contribute-content">
-					<p> The Uprooting is a collection of refugees' stories. </br> For more information email example@example.com </p>
+					<p> The Uprooting is a collection of refugees' stories. </br> For more information email miguelwi[at]gmail.com </p>
 				</div>
 			</div>
 			<div class="footer">

@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title> The Uprooting - Stories</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 
 
 		<!-- jquery -->
@@ -17,8 +17,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
 		<script src="js/vendor/imagesloaded.pkgd.js"></script>
 		
-		<script type="text/javascript">
-		</script>
 
 		<script type="text/javascript">
 			var msnry;
@@ -37,12 +35,21 @@
 			    // options...
 			  });
 			});
-			// trigger masonry when fonts have loaded
-			Typekit.load({
-			  active: triggerMasonry,
-			  inactive: triggerMasonry
-			}); 
+
+			WebFont.load({
+    			google: {
+        		families: ["Source Sans Pro", "PT Serif"]
+    			},
+
+    			active: function () {
+
+        		var e = jQuery("#masonry-grid");
+
+        		e.masonry("layout");
+    			}
+			});
 		</script>
+
 	</head>
 	<body>
 		<header class="stories">
@@ -59,9 +66,9 @@
 			 		<a href="about.html">About</a>
 			 	</div>
 			  	<nav class="sharing-inner">
-					<a href="http://www.facebook.com/sharer.php?u=theuprooting.eu"> <img src="img/Facebook-Icon.png"></a>
-					<a href="https://twitter.com/share"><img src="img/Twitter-Icon.png"></a>
-					<a href="https://www.pinterest.com/pin/create/button/"><img src="img/Pintrest-Icon.png"></a>
+					<a href="http://www.facebook.com/sharer.php?u=theuprooting.eu"> <img src="img/icons/social/Facebook-Icon.png"></a>
+					<a href="https://twitter.com/share"><img src="img/icons/social/Twitter-Icon.png"></a>
+					<a href="https://www.pinterest.com/pin/create/button/"><img src="img/icons/social/Pintrest-Icon.png"></a>
 				</nav>
 			</div>			
 		</nav>

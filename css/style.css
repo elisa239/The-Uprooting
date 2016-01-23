@@ -184,14 +184,16 @@ header .stories{
 }
 
 .video-container {
-  position:relative;
-  max-height: 620px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .down-arrow-home {
     position: absolute;
     width: 40px;
-    bottom: 0;
+    top: 0;
     margin:0;
     left: 50%;
     background-color: #fff;
@@ -565,7 +567,7 @@ footer,
 }
 
 .places-bg {
-  background-image: url("img/places/map.svg");
+  background-image: url("../img/places/map.svg");
   min-height: 1200px;
 }
 
@@ -612,7 +614,7 @@ img{
 .article-title {
   width: 14%;
   margin: 0 67px;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .article-title h1 {
@@ -636,6 +638,10 @@ img{
   padding-bottom: 5px;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .article-graphic {
   float: right;
   position: relative;
@@ -655,7 +661,7 @@ img{
 }
 
 .graphic-divider {
-  height: 900px;
+  min-height: 400px;
   margin: 0 50%;
   color: #FF6A00;
   border-left: solid 1px;
@@ -707,13 +713,18 @@ img{
   padding: 10px;
 }
 
+.pull-container {
+  margin: 20px 40px;
+}
+
 .pull-quote {
+  position: relative;
+  display: table-cell;
   font-size: 16px;
-  line-height:20px;
-  width: 60%;
+  line-height: 22px;
+  width: 100%;
   border-left: 1px solid #FF6A00;
-  padding: 25px;
-  margin:25px;
+  padding: 28px 25px;
 }
 
 .image-large {
@@ -746,10 +757,17 @@ img{
   margin: 25px 25px 25px 0;
 }
 
-.article-text {
+.article-text, .article-text-italic {
   font-family: 'PT Serif', serif;
+  display: table;
   font-size: 14px;
   line-height: 19px;
+  padding: 8px 0;
+  margin: 10px 0;
+}
+
+.article-text-italic {
+  font-style: italic;
 }
 
 /* STYLING LANDING PAGE */
@@ -774,18 +792,6 @@ img{
   object-fit: cover; /*cover video background */
   z-index:-1;
   overflow: hidden;
-}
-
-.down-arrow-video {
-    position: absolute;
-    width: 40px;
-    bottom: 0;
-    margin:0;
-    left: 50%;
-    background-color: #fff;
-    padding: 10px;
-    opacity: .7;
-    transform: translate(-50%, 0%);
 }
 
 .section-container{
@@ -887,6 +893,19 @@ h3 {
 .stories-content {
 }
 
+.clip-circle {
+  -webkit-clip-path: circle(48% at center);
+  -moz-clip-path: circle(100px, 100px, 100px);
+  clip-path: circle(100px, 100px, 100px);
+}
+
+.image-placeholder {
+  background-color: #000000;
+  -webkit-clip-path: circle(48% at center);
+  -moz-clip-path: circle(100px, 100px, 100px);
+  clip-path: circle(100px, 100px, 100px);
+}
+
 .about-content{
   width: 52%;
   display: block;
@@ -897,8 +916,8 @@ h3 {
 .about-content p {
   font-family: 'PT Serif', serif;
   padding: 20px;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .grid-item--about { 
@@ -917,6 +936,11 @@ h3 {
 
 .caption-about {
   font-family: 'Source Sans Pro', sans-serif;
+  width: 71%;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .caption-about h1{
