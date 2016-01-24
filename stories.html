@@ -11,14 +11,26 @@
 		<!-- sticky nav -->
 		<script src="js/nav.js"></script>
 
+		<!-- fonts -->
+		<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic' rel='stylesheet' type='text/css'>
 
-		<!-- mansonry -->
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
-		<script src="js/vendor/imagesloaded.pkgd.js"></script>
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 
 		<script type="text/javascript">
+			WebFont.load({
+    			google: {
+        		families: ["Source Sans Pro", "PT Serif"]
+    			}
+			});
+		</script>
+
+		<!-- mansonry -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
+		<script src="js/vendor/imagesloaded.pkgd.js"></script>
+
+		<script type="text/javascript">
+
 			var msnry;
 
 			function triggerMasonry() {
@@ -34,19 +46,6 @@
 			  msnry = new Masonry( container, {
 			    // options...
 			  });
-			});
-
-			WebFont.load({
-    			google: {
-        		families: ["Source Sans Pro", "PT Serif"]
-    			},
-
-    			active: function () {
-
-        		var e = jQuery("#masonry-grid");
-
-        		e.masonry("layout");
-    			}
 			});
 		</script>
 
@@ -73,13 +72,13 @@
 			</div>			
 		</nav>
 		<div class="main">
-			<div class="grid js-masonry" data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer"}'>
+			<div class="grid" js-masonry" data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer"}'>"
 				<!-- row 1 -->
 				<div class="grid-sizer"></div>
 			  	<div class="grid-item grid-item--stories1">
 			  			<a href="article.html">
 				  			<div class="image">
-					  			<img src="img/stories/Firas-1.jpg">
+					  			<img src="img/stories/alKhal-Final-1.jpg">
 					  			<span class="image-text1">
 					  					<span class="image-text-inner1">
 					  						<span class="image-text-quote">
@@ -90,16 +89,17 @@
 					  		</div>
 					  	</a>
 				  		<div class="caption-stories">
-			  				<h1> FIRAS ALSHATER </h1>
+			  				<h1> al&ndash;Khal "The Uncle" </h1>
+			  				<p> From: Syria </p>
+				  			<p> Interviewed in: Izmir, Turkey </p>
 			  				<div class="info">
-				  				<p> From: Syria </p>
-				  				<p> Interviewed in: Berlin </p>
+				  				<p> "What we wish, we readily believe, and what we ourselves think, we imagine others think also."</p>
 				  			</div>
 		  				</div>
 				</div>			  		
 		  		<div class="grid-item grid-item--stories2">
 		  			<div class="image">
-			  			<img src="img/stories/Ghanem-1.jpg">
+			  			<img src="img/stories/Esraa-Final-1.jpg">
 			  			<span class="image-text2">
 				  					<span class="image-text-inner2">
 				  						<span class="image-text-quote">
@@ -109,15 +109,15 @@
 				  		</span>
 				  	</div>
 		  			<div class="caption-stories">
-		  				<h1> GHANEM AL HAMWY </h1>
+		  				<h1> Esraa </h1>
 		  				<div class="info">
-			  				<p> From: Syria </p>
-			  				<p> Interviewed in: Berlin </p>
+			  				<p> From: Set Zeynab, Syria </p>
+			  				<p> Interviewed in: Izmir, Turkey </p>
 			  			</div>
 		  			</div>
 		  		</div>
 		  		<div class="grid-item grid-item--stories3">
-		  			<img src="img/stories/Omar-1.jpg">
+		  			<img src="img/stories/TheFamily-Final-1.jpg">
 		  			<span class="image-text3">
 			  					<span class="image-text-inner3">
 			  						<span class="image-text-quote">
@@ -126,17 +126,17 @@
 			  					</span>
 			  		</span>
 		  			<div class="caption-stories">
-		  				<h1> OMAR JOMAA </h1>
+		  				<h1> Abu Muhammed and Family </h1>
 		  				<div class="info">
-		  					<p> From: Turkey </p>
-			  				<p> Interviewed in: Turkey </p>
+		  					<p> From: Homs, Syria </p>
+			  				<p> Interviewed in: Izmir, Turkey </p>
 			  			</div>
 		  			</div>
 		  		</div>
 
 		  		<!-- row 2 -->
 		  		<div class="grid-item grid-item--stories2">
-		  			<img src="img/stories/Ali-1.jpg">
+		  			<img src="img/stories/Firas_Final-1.jpg">
 		  			<span class="image-text2">
 			  					<span class="image-text-inner2">
 			  						<span class="image-text-quote">
@@ -145,15 +145,15 @@
 			  					</span>
 			  		</span>
 		  			<div class="caption-stories">
-		  				<h1> ALI RAHAB </h1>
+		  				<h1> Firas Alshater </h1>
 		  				<div class="info">
-			  				<p> From: Syria </p>
-			  				<p> Interviewed in: Switzerland </p>
+			  				<p> From: Homs, Syria </p>
+			  				<p> Interviewed in: Berlin, Germany </p>
 			  			</div>
 		  			</div>
 		  		</div>
 		  		<div class="grid-item grid-item--stories3">
-		  			<img src="img/stories/Ali-1.jpg">
+		  			<img src="img/stories/Ghanem-1.jpg">
 		  			<span class="image-text3">
 			  					<span class="image-text-inner3">
 			  						<span class="image-text-quote">
@@ -162,15 +162,15 @@
 			  					</span>
 			  		</span>
 		  			<div class="caption-stories">
-		  				<h1> AL KHAL </h1>
+		  				<h1> Ghanem al-Hamwy </h1>
 		  				<div class="info">
-			  				<p> From: Turkey </p>
-			  				<p> Interviewed in: Sweden </p>
+			  				<p> From: Homs, Syria </p>
+			  				<p> Interviewed in: Istanbul, Turkey </p>
 			  			</div>
 		  			</div>
 		  		</div>
 		  		<div class="grid-item grid-item--stories1">
-		  			<img src="img/stories/Taim-1.jpg">
+		  			<img src="img/stories/Khaled-Final-2.jpg">
 		  			<span class="image-text1">
 			  					<span class="image-text-inner1">
 			  						<span class="image-text-quote">
@@ -179,17 +179,17 @@
 			  					</span>
 			  		</span>
 		  			<div class="caption-stories">
-		  				<h1> TAIM AL SHAMI </h1>
+		  				<h1> Khaled al-Masri </h1>
 		  				<div class="info">
-			  				<p> From: Greece </p>
-			  				<p> Interviewed in: Berlin </p>
+			  				<p> From: Homs, Syria </p>
+			  				<p> Interviewed in: Berlin, Germany </p>
 			  			</div>
 		  			</div>
 		  		</div>
 
 		  		<!-- row 3 -->
 		  		<div class="grid-item grid-item--stories1">
-		  			<img src="img/stories/Hanibal-1.jpg">
+		  			<img src="img/stories/Khalil-Final-4.jpg">
 		  			<span class="image-text1">
 			  					<span class="image-text-inner1">
 			  						<span class="image-text-quote">
@@ -198,10 +198,10 @@
 			  					</span>
 			  		</span>
 		  			<div class="caption-stories">
-		  				<h1> HANIBAL </h1>
+		  				<h1> Khalil </h1>
 		  				<div class="info">
-			  				<p> From: Turkey </p>
-			  				<p> Interviewed in: Sweden </p>
+			  				<p> From: Yarmouk, Syria </p>
+			  				<p> Interviewed in: Izmir, Turkey </p>
 			  			</div>
 		  			</div>
 		  		</div>
@@ -217,13 +217,13 @@
 		  			<div class="caption-stories">
 		  				<h1> LEEN HADIDI </h1>
 		  				<div class="info">
-		  					<p> From: Syria </p>
-			  				<p> Interviewed in: Berlin </p>
+		  					<p> From: Der-ez-Zor, Syria </p>
+			  				<p> Interviewed in: Berlin, Germany </p>
 		  				</div>
 		  			</div>
 		  		</div>
 		  		<div class="grid-item grid-item--stories3">
-		  			<img src="img/stories/Khalen-1.jpg">
+		  			<img src="img/stories/MahmoudShaban-Final-1.jpg">
 		  			<span class="image-text3">
 			  					<span class="image-text-inner3">
 			  						<span class="image-text-quote">
@@ -232,13 +232,105 @@
 			  					</span>
 			  		</span>
 		  			<div class="caption-stories">
-		  				<h1> KHALEN ALMASRI </h1>
+		  				<h1> Mahmoud Shaban </h1>
 		  				<div class="info">
-		  					<p> From: Turkey </p>
-			  				<p> Interviewed in: Switzerland </p>
+		  					<p> From: Idlib, Syria </p>
+			  				<p> Interviewed in: Istanbul, Turkey </p>
 		  				</div>
 		  			</div>
 		  		</div>
+
+		  		<div class="grid-item grid-item--stories2">
+		  			<img src="img/stories/Medea-Final-1.jpg">
+		  			<span class="image-text3">
+			  					<span class="image-text-inner3">
+			  						<span class="image-text-quote">
+			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
+			  						</span>
+			  					</span>
+			  		</span>
+		  			<div class="caption-stories">
+		  				<h1> Medea Daghestani </h1>
+		  				<div class="info">
+		  					<p> From: Homs, Syria </p>
+			  				<p> Interviewed in: Berlin, Germany </p>
+		  				</div>
+		  			</div>
+		  		</div>
+
+		  		<div class="grid-item grid-item--stories3">
+		  			<img src="img/stories/Omar-1.jpg">
+		  			<span class="image-text3">
+			  					<span class="image-text-inner3">
+			  						<span class="image-text-quote">
+			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
+			  						</span>
+			  					</span>
+			  		</span>
+		  			<div class="caption-stories">
+		  				<h1> Omar Jomaa </h1>
+		  				<div class="info">
+		  					<p> From: Damascus, Syria </p>
+			  				<p> Interviewed in: Istanbul, Turkey </p>
+		  				</div>
+		  			</div>
+		  		</div>
+
+		  		<div class="grid-item grid-item--stories1">
+		  			<img src="img/stories/Taim-1.jpg">
+		  			<span class="image-text3">
+			  					<span class="image-text-inner3">
+			  						<span class="image-text-quote">
+			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
+			  						</span>
+			  					</span>
+			  		</span>
+		  			<div class="caption-stories">
+		  				<h1> Taim al-Shami </h1>
+		  				<div class="info">
+		  					<p> From: Aleppo, Syria </p>
+			  				<p> Interviewed in: Istanbul, Turkey </p>
+		  				</div>
+		  			</div>
+		  		</div>
+
+		  		<div class="grid-item grid-item--stories1">
+		  			<img src="img/stories/Messoud-Final-1.jpg">
+		  			<span class="image-text3">
+			  					<span class="image-text-inner3">
+			  						<span class="image-text-quote">
+			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
+			  						</span>
+			  					</span>
+			  		</span>
+		  			<div class="caption-stories">
+		  				<h1> Messoud </h1>
+		  				<div class="info">
+		  					<p> From: Derbasiyeh, Syria [Rojava] </p>
+			  				<p> Interviewed in: Istanbul, Turkey </p>
+		  				</div>
+		  			</div>
+		  		</div>
+
+
+		  		<div class="grid-item grid-item--stories2">
+		  			<img src="img/stories/raven.jpg">
+		  			<span class="image-text3">
+			  					<span class="image-text-inner3">
+			  						<span class="image-text-quote">
+			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
+			  						</span>
+			  					</span>
+			  		</span>
+		  			<div class="caption-stories">
+		  				<h1> Abd-al-Rahman </h1>
+		  				<div class="info">
+		  					<p> From: Damascus, Syria </p>
+			  				<p> Interviewed in: London, England </p>
+		  				</div>
+		  			</div>
+		  		</div>
+
 		  	</div>
 		</div>
 		<div class="footer-inner">
