@@ -4,7 +4,6 @@
 		<title> The Uprooting - Stories</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
-
 		<!-- jquery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -15,37 +14,14 @@
 		<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic' rel='stylesheet' type='text/css'>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js">
+		</script>
 
 		<script type="text/javascript">
 			WebFont.load({
     			google: {
         		families: ["Source Sans Pro", "PT Serif"]
     			}
-			});
-		</script>
-
-		<!-- mansonry -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
-		<script src="js/vendor/imagesloaded.pkgd.js"></script>
-
-		<script type="text/javascript">
-
-			var msnry;
-
-			function triggerMasonry() {
-			  // don't proceed if masonry has not been initialized
-			  if ( !msnry ) {
-			    return;
-			  }
-			  msnry.layout();
-			}
-			// initialize masonry on document ready
-			docReady( function() {
-			  var container = document.querySelector('.grid');
-			  msnry = new Masonry( container, {
-			    // options...
-			  });
 			});
 		</script>
 
@@ -71,271 +47,221 @@
 				</nav>
 			</div>			
 		</nav>
-		<div class="main">
-			<div class="grid" js-masonry" data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer"}'>"
-				<!-- row 1 -->
-				<div class="grid-sizer"></div>
-			  	<div class="grid-item grid-item--stories1">
-			  			<a href="article.html">
-				  			<div class="image">
-					  			<img src="img/stories/alKhal-Final-1.jpg">
-					  			<span class="image-text1">
-					  					<span class="image-text-inner1">
-					  						<span class="image-text-quote">
-					  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
-					  						</span>
-					  					</span>
-					  			</span>
-					  		</div>
+		<div class="grid-wrapper">
+				<!-- item 1 -->
+				<div class="col2">
+			  			<a href="messoud.html">
+					  		<img src="img/stories/Messoud-Final-1.jpg">
 					  	</a>
 				  		<div class="caption-stories">
-			  				<h1> al&ndash;Khal "The Uncle" </h1>
-			  				<p> From: Syria </p>
-				  			<p> Interviewed in: Izmir, Turkey </p>
+				  			<div class="caption-title">
+			  					<h1> Messoud </h1>
+			  				</div>
 			  				<div class="info">
 				  				<p> "What we wish, we readily believe, and what we ourselves think, we imagine others think also."</p>
 				  			</div>
 		  				</div>
-				</div>			  		
-		  		<div class="grid-item grid-item--stories2">
-		  			<div class="image">
-			  			<img src="img/stories/Esraa-Final-1.jpg">
-			  			<span class="image-text2">
-				  					<span class="image-text-inner2">
-				  						<span class="image-text-quote">
-				  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
-				  						</span>
-				  					</span>
-				  		</span>
-				  	</div>
-		  			<div class="caption-stories">
-		  				<h1> Esraa </h1>
-		  				<div class="info">
-			  				<p> From: Set Zeynab, Syria </p>
-			  				<p> Interviewed in: Izmir, Turkey </p>
-			  			</div>
-		  			</div>
-		  		</div>
-		  		<div class="grid-item grid-item--stories3">
-		  			<img src="img/stories/TheFamily-Final-1.jpg">
-		  			<span class="image-text3">
-			  					<span class="image-text-inner3">
-			  						<span class="image-text-quote">
-			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
-			  						</span>
-			  					</span>
-			  		</span>
-		  			<div class="caption-stories">
-		  				<h1> Abu Muhammed and Family </h1>
-		  				<div class="info">
-		  					<p> From: Homs, Syria </p>
-			  				<p> Interviewed in: Izmir, Turkey </p>
-			  			</div>
-		  			</div>
 		  		</div>
 
-		  		<!-- row 2 -->
-		  		<div class="grid-item grid-item--stories2">
-		  			<img src="img/stories/Firas_Final-1.jpg">
-		  			<span class="image-text2">
-			  					<span class="image-text-inner2">
-			  						<span class="image-text-quote">
-			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
-			  						</span>
-			  					</span>
-			  		</span>
-		  			<div class="caption-stories">
-		  				<h1> Firas Alshater </h1>
-		  				<div class="info">
-			  				<p> From: Homs, Syria </p>
-			  				<p> Interviewed in: Berlin, Germany </p>
-			  			</div>
-		  			</div>
-		  		</div>
-		  		<div class="grid-item grid-item--stories3">
-		  			<img src="img/stories/Ghanem-1.jpg">
-		  			<span class="image-text3">
-			  					<span class="image-text-inner3">
-			  						<span class="image-text-quote">
-			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
-			  						</span>
-			  					</span>
-			  		</span>
-		  			<div class="caption-stories">
-		  				<h1> Ghanem al-Hamwy </h1>
-		  				<div class="info">
-			  				<p> From: Homs, Syria </p>
-			  				<p> Interviewed in: Istanbul, Turkey </p>
-			  			</div>
-		  			</div>
-		  		</div>
-		  		<div class="grid-item grid-item--stories1">
-		  			<img src="img/stories/Khaled-Final-2.jpg">
-		  			<span class="image-text1">
-			  					<span class="image-text-inner1">
-			  						<span class="image-text-quote">
-			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
-			  						</span>
-			  					</span>
-			  		</span>
-		  			<div class="caption-stories">
-		  				<h1> Khaled al-Masri </h1>
-		  				<div class="info">
-			  				<p> From: Homs, Syria </p>
-			  				<p> Interviewed in: Berlin, Germany </p>
-			  			</div>
-		  			</div>
-		  		</div>
-
-		  		<!-- row 3 -->
-		  		<div class="grid-item grid-item--stories1">
-		  			<img src="img/stories/Khalil-Final-4.jpg">
-		  			<span class="image-text1">
-			  					<span class="image-text-inner1">
-			  						<span class="image-text-quote">
-			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
-			  						</span>
-			  					</span>
-			  		</span>
-		  			<div class="caption-stories">
-		  				<h1> Khalil </h1>
-		  				<div class="info">
-			  				<p> From: Yarmouk, Syria </p>
-			  				<p> Interviewed in: Izmir, Turkey </p>
-			  			</div>
-		  			</div>
-		  		</div>
-		  		<div class="grid-item grid-item--stories2">
-		  			<img src="img/stories/Leen-1.jpg">
-		  			<span class="image-text2">
-			  					<span class="image-text-inner2">
-			  						<span class="image-text-quote">
-			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
-			  						</span>
-			  					</span>
-			  		</span>
-		  			<div class="caption-stories">
-		  				<h1> LEEN HADIDI </h1>
-		  				<div class="info">
-		  					<p> From: Der-ez-Zor, Syria </p>
-			  				<p> Interviewed in: Berlin, Germany </p>
+		  		<!-- item 2 -->
+		  		<div class="col3">
+			  			<a href="esraa.html">
+					  		<img src="img/stories/Esraa-Final-1.jpg">
+					  	</a>
+				  		<div class="caption-stories">
+				  			<div class="caption-title">
+			  					<h1> Esraa </h1>
+			  				</div>
+			  				<div class="info">
+				  				<p> "What we wish, we readily believe, and what we ourselves think, we imagine others think also."</p>
+				  			</div>
 		  				</div>
-		  			</div>
 		  		</div>
-		  		<div class="grid-item grid-item--stories3">
-		  			<img src="img/stories/MahmoudShaban-Final-1.jpg">
-		  			<span class="image-text3">
-			  					<span class="image-text-inner3">
-			  						<span class="image-text-quote">
-			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
-			  						</span>
-			  					</span>
-			  		</span>
-		  			<div class="caption-stories">
-		  				<h1> Mahmoud Shaban </h1>
-		  				<div class="info">
-		  					<p> From: Idlib, Syria </p>
-			  				<p> Interviewed in: Istanbul, Turkey </p>
+
+		  		<!-- item 3 -->
+		  		<div class="col3">
+			  			<a href="abumuhammad.html">
+					  		<img src="img/stories/TheFamily-Final-1.jpg">
+					  	</a>
+				  		<div class="caption-stories">
+				  			<div class="caption-title">
+			  					<h1> Abu Muhammed and Family </h1>
+			  				</div>
+			  				<div class="info">
+				  				<p> "What we wish, we readily believe, and what we ourselves think, we imagine others think also."</p>
+				  			</div>
 		  				</div>
-		  			</div>
 		  		</div>
 
-		  		<div class="grid-item grid-item--stories2">
-		  			<img src="img/stories/Medea-Final-1.jpg">
-		  			<span class="image-text3">
-			  					<span class="image-text-inner3">
-			  						<span class="image-text-quote">
-			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
-			  						</span>
-			  					</span>
-			  		</span>
-		  			<div class="caption-stories">
-		  				<h1> Medea Daghestani </h1>
-		  				<div class="info">
-		  					<p> From: Homs, Syria </p>
-			  				<p> Interviewed in: Berlin, Germany </p>
+		  		<!-- item 4 -->
+		  		<div class="col3">
+			  			<a href="firas.html">
+					  		<img src="img/stories/Firas_Final-1.jpg">
+					  	</a>
+				  		<div class="caption-stories">
+				  			<div class="caption-title">
+			  					<h1> Firas Alshater </h1>
+			  				</div>
+			  				<div class="info">
+				  				<p> "What we wish, we readily believe, and what we ourselves think, we imagine others think also."</p>
+				  			</div>
 		  				</div>
-		  			</div>
 		  		</div>
 
-		  		<div class="grid-item grid-item--stories3">
-		  			<img src="img/stories/Omar-1.jpg">
-		  			<span class="image-text3">
-			  					<span class="image-text-inner3">
-			  						<span class="image-text-quote">
-			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
-			  						</span>
-			  					</span>
-			  		</span>
-		  			<div class="caption-stories">
-		  				<h1> Omar Jomaa </h1>
-		  				<div class="info">
-		  					<p> From: Damascus, Syria </p>
-			  				<p> Interviewed in: Istanbul, Turkey </p>
+		  		<!-- item 5 -->
+		  		<div class="col3">
+			  			<a href="ghanem.html">
+					  		<img src="img/stories/Ghanem-1.jpg">
+					  	</a>
+				  		<div class="caption-stories">
+				  			<div class="caption-title">
+			  					<h1> Ghanem al-Hamwy </h1>
+			  				</div>
+			  				<div class="info">
+				  				<p> "What we wish, we readily believe, and what we ourselves think, we imagine others think also."</p>
+				  			</div>
 		  				</div>
-		  			</div>
 		  		</div>
 
-		  		<div class="grid-item grid-item--stories1">
-		  			<img src="img/stories/Taim-1.jpg">
-		  			<span class="image-text3">
-			  					<span class="image-text-inner3">
-			  						<span class="image-text-quote">
-			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
-			  						</span>
-			  					</span>
-			  		</span>
-		  			<div class="caption-stories">
-		  				<h1> Taim al-Shami </h1>
-		  				<div class="info">
-		  					<p> From: Aleppo, Syria </p>
-			  				<p> Interviewed in: Istanbul, Turkey </p>
+		  		<!-- item 6 -->
+		  		<div class="col3">
+			  			<a href="khaled.html">
+					  		<img src="img/stories/Khaled-Final-2.jpg">
+					  	</a>
+				  		<div class="caption-stories">
+				  			<div class="caption-title">
+			  					<h1> Khaled al-Masri </h1>
+			  				</div>
+			  				<div class="info">
+				  				<p> "What we wish, we readily believe, and what we ourselves think, we imagine others think also."</p>
+				  			</div>
 		  				</div>
-		  			</div>
 		  		</div>
 
-		  		<div class="grid-item grid-item--stories1">
-		  			<img src="img/stories/Messoud-Final-1.jpg">
-		  			<span class="image-text3">
-			  					<span class="image-text-inner3">
-			  						<span class="image-text-quote">
-			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
-			  						</span>
-			  					</span>
-			  		</span>
-		  			<div class="caption-stories">
-		  				<h1> Messoud </h1>
-		  				<div class="info">
-		  					<p> From: Derbasiyeh, Syria [Rojava] </p>
-			  				<p> Interviewed in: Istanbul, Turkey </p>
+		  		<!-- item 7 -->
+		  		<div class="col3">
+			  			<a href="khalil.html">
+					  		<img src="img/stories/Khalil-Final-4.jpg">
+					  	</a>
+				  		<div class="caption-stories">
+				  			<div class="caption-title">
+			  					<h1> Khalil </h1>
+			  				</div>
+			  				<div class="info">
+				  				<p> "What we wish, we readily believe, and what we ourselves think, we imagine others think also."</p>
+				  			</div>
 		  				</div>
-		  			</div>
 		  		</div>
 
-
-		  		<div class="grid-item grid-item--stories2">
-		  			<img src="img/stories/raven.jpg">
-		  			<span class="image-text3">
-			  					<span class="image-text-inner3">
-			  						<span class="image-text-quote">
-			  							"What we wish, we readily believe, and what we ourselves think, we imagine others think also."
-			  						</span>
-			  					</span>
-			  		</span>
-		  			<div class="caption-stories">
-		  				<h1> Abd-al-Rahman </h1>
-		  				<div class="info">
-		  					<p> From: Damascus, Syria </p>
-			  				<p> Interviewed in: London, England </p>
+		  		<!-- item 8 -->
+		  		<div class="col2">
+			  			<a href="leen.html">
+					  		<img src="img/stories/Leen-1.jpg">
+					  	</a>
+				  		<div class="caption-stories">
+				  			<div class="caption-title">
+			  					<h1> LEEN HADIDI </h1>
+			  				</div>
+			  				<div class="info">
+				  				<p> "What we wish, we readily believe, and what we ourselves think, we imagine others think also."</p>
+				  			</div>
 		  				</div>
-		  			</div>
 		  		</div>
 
-		  	</div>
+		  		<!-- item 9 -->
+		  		<div class="col2">
+			  			<a href="mahmoud.html">
+					  		<img src="img/stories/MahmoudShaban-Final-1.jpg">
+					  	</a>
+				  		<div class="caption-stories">
+				  			<div class="caption-title">
+			  					<h1> Mahmoud Shaban </h1>
+			  				</div>
+			  				<div class="info">
+				  				<p> "What we wish, we readily believe, and what we ourselves think, we imagine others think also."</p>
+				  			</div>
+		  				</div>
+		  		</div>
+
+		  		<!-- item 10 -->
+		  		<div class="col3">
+			  			<a href="medea.html">
+					  		<img src="img/stories/Medea-Final-1.jpg">
+					  	</a>
+				  		<div class="caption-stories">
+				  			<div class="caption-title">
+			  					<h1> Medea Daghestani </h1>
+			  				</div>
+			  				<div class="info">
+				  				<p> "What we wish, we readily believe, and what we ourselves think, we imagine others think also."</p>
+				  			</div>
+		  				</div>
+		  		</div>
+
+		  		<!-- item 11 -->
+		  		<div class="col2">
+			  			<a href="omar.html">
+					  		<img src="img/stories/Omar-1.jpg">
+					  	</a>
+				  		<div class="caption-stories">
+				  			<div class="caption-title">
+			  					<h1> Omar Jomaa </h1>
+			  				</div>
+			  				<div class="info">
+				  				<p> "What we wish, we readily believe, and what we ourselves think, we imagine others think also."</p>
+				  			</div>
+		  				</div>
+		  		</div>
+
+		  		<!-- item 12 -->
+		  		<div class="col3">
+			  			<a href="taim.html">
+					  		<img src="img/stories/Taim-1.jpg">
+					  	</a>
+				  		<div class="caption-stories">
+				  			<div class="caption-title">
+			  					<h1> Taim al-Shami </h1>
+			  				</div>
+			  				<div class="info">
+				  				<p> "What we wish, we readily believe, and what we ourselves think, we imagine others think also."</p>
+				  			</div>
+		  				</div>
+		  		</div>
+
+		  		<!-- item 13 -->
+		  		
+				<div class="col3">
+			  			<a href="alkhal.html">
+					  		<img src="img/stories/alKhal-Final-1.jpg">
+					  	</a>
+				  		<div class="caption-stories">
+				  			<div class="caption-title">
+			  					<h1> al&ndash;Khal "The Uncle" </h1>
+				  			</div>
+			  				<div class="info">
+				  				<p> "What we wish, we readily believe, and what we ourselves think, we imagine others think also."</p>
+				  			</div>
+		  				</div>
+		  		</div>
+
+		  		<!-- item 14 -->
+		  		<div class="col2">
+			  			<a href="abdalrahman.html">
+					  		<img src="img/stories/raven.jpg">
+					  	</a>
+				  		<div class="caption-stories">
+				  			<div class="caption-title">
+			  					<h1> Abd-al-Rahman </h1>
+			  				</div>
+			  				<div class="info">
+				  				<p> "What we wish, we readily believe, and what we ourselves think, we imagine others think also."</p>
+				  			</div>
+		  				</div>
+		  		</div>
+		  		
 		</div>
 		<div class="footer-inner">
 			<p>&copy; 2015 The Uprooting all rights reserved </p>
-			</div>
 		</div>
 	</body>
 </html>
