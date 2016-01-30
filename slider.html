@@ -15,120 +15,52 @@
 		<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 
 		<!-- vertical scroll -->
-		<script src="js/script.js"></script>
 
 		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 		<script type="text/javascript" src="js/vendor/jquery.slimscroll.min.js"></script>
 
 		<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['firstPage'],
-				autoScrolling: false,
-				css3: true,
-				fitToSection: false
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					sectionsColor: ['#fff'],
+					keyboardScrolling: true,
+					verticalCentered: true,
+				});
 			});
-		});
 		</script>
 
 	</head>
 	<body>
 		<div class="main">
 			<div id="fullpage">
-				<div class="section" id="section-home">
-					<div class="close">
-						<a href="places.html">
-							<img class="close-icon" src="img/icons/slideshow/close.svg">
-						</a>
+				<div class="section" id="section1">
+						<div class="close">
+							<a href="messoud.html">
+								<img class="close-icon" src="img/icons/slideshow/close.svg">
+							</a>
+						</div>
+						<!-- text -->
+						<div class="slide" id="slide1">
+						<img src="img/slide-home/IntroSlideshow-1.jpg">
+						<div class="caption">
+							<h1> here goes a caption </h1>
+							<h2> and a smaller caption beneath </h2>
+						</div>
 					</div>
-					<!-- text -->
-					<div class="slide">
-						<div class="slide-text"><p> Here goes the caption for this image </p></div>
+					<div class="slide" id="slide2">
+						<img src="img/slide-home/IntroSlideshow-2.jpg">
+						<div class="caption">
+							<h1> here goes a caption </h1>
+							<h2> and a smaller caption beneath </h2>
+						</div>
 					</div>
-
-					<!-- image -->
-					<div class="slide">
-						<img src="img/places/Berlin/Lageso-1.jpg">
-						<div class="slide-caption"><p> Here goes the caption for this image </p></div>
-					</div>
-
-					<!-- image -->
-					<div class="slide">
-						<img src="img/places/Berlin/Lageso-2.jpg">
-						<div class="slide-caption"><p> Here goes the caption for this image </p></div>
-					</div>
-
-					<!-- image -->
-					<div class="slide">
-						<img src="img/places/Berlin/Lageso-3.jpg">
-						<div class="slide-caption"><p> Here goes the caption for this image </p></div>
-					</div>
-
-					<!-- image -->
-					<div class="slide">
-						<img src="img/places/Berlin/Lageso-4.jpg">
-						<div class="slide-caption"><p> Here goes the caption for this image </p></div>
-					</div>
-
-					<!-- image -->
-					<div class="slide">
-						<img src="img/places/Berlin/Lageso-5.jpg">
-						<div class="slide-caption"><p> Here goes the caption for this image </p></div>
-					</div>
-
-					<!-- image -->
-					<div class="slide">
-						<img src="img/places/Berlin/Lageso-6.jpg">
-						<div class="slide-caption"><p> Here goes the caption for this image </p></div>
-					</div>
-
-					<!-- image -->
-					<div class="slide">
-						<img src="img/places/Berlin/Lageso-7.jpg">
-						<div class="slide-caption"><p> Here goes the caption for this image </p></div>
-					</div>
-
-					<!-- image -->
-					<div class="slide">
-						<img src="img/places/Berlin/Lageso-8.jpg">
-						<div class="slide-caption"><p> Here goes the caption for this image </p></div>
-					</div>
-
-					<!-- image -->
-					<div class="slide">
-						<img src="img/places/Berlin/Lageso-9.jpg">
-						<div class="slide-caption"><p> Here goes the caption for this image </p></div>
-					</div>
-
-					<!-- image -->
-					<div class="slide">
-						<img src="img/places/Berlin/Lageso-10.jpg">
-						<div class="slide-caption"><p> Here goes the caption for this image </p></div>
-					</div>
-
-					<!-- image -->
-					<div class="slide">
-						<img src="img/places/Berlin/Lageso-11.jpg">
-						<div class="slide-caption"><p> Here goes the caption for this image </p></div>
-					</div>
-
-					<!-- image -->
-					<div class="slide">
-						<img src="img/places/Berlin/Lageso-12.jpg">
-						<div class="slide-caption"><p> Here goes the caption for this image </p></div>
-					</div>
-
-					<!-- image -->
-					<div class="slide">
-						<img src="img/places/Berlin/Lageso-13.jpg">
-						<div class="slide-caption"><p> Here goes the caption for this image </p></div>
-					</div>
-
-					<!-- image -->
-					<div class="slide">
-						<img src="img/places/Berlin/Lageso-14.jpg">
-						<div class="slide-caption"><p> Here goes the caption for this image </p></div>
+					<div class="slide" id="slide3">
+						<img src="img/slide-home/IntroSlideshow-3.jpg">
+						<div class="caption">
+							<h1> here goes a caption </h1>
+							<h2> and a smaller caption beneath </h2>
+						</div>
 					</div>
 				</div>
 			</div>

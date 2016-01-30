@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> The Uprooting </title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+		<!-- jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- sticky nav -->
+		<script src="js/nav.js"></script>
+
+		<!-- fonts -->
+		<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+
+		<!-- vertical scroll -->
+
+		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+		<script type="text/javascript" src="js/vendor/jquery.slimscroll.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					sectionsColor: ['#fff'],
+					keyboardScrolling: true,
+					verticalCentered: true,
+				});
+			});
+		</script>
+
+	</head>
+	<body>
+		<div class="main">
+			<div id="fullpage">
+				<div class="section" id="section1">
+						<div class="close">
+							<a href="messoud.html">
+								<img class="close-icon" src="img/icons/slideshow/close.svg">
+							</a>
+						</div>
+						<div class="article-detail slide-h">
+							<img src="img/slide-home/IntroSlideshow-1.jpg">
+							<div class="caption">
+								<h1> here goes a caption </h1>
+								<h2> and a smaller caption beneath </h2>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

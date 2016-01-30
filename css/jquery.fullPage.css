@@ -86,7 +86,6 @@ html.fp-enabled,
     background-image: url("../img/icons/slideshow/arrow-left.svg");
     z-index: 1000;
     display: block;
-    margin-left: 10px;
 }
 .fp-controlArrow.fp-next {
     opacity: .7;
@@ -96,7 +95,6 @@ html.fp-enabled,
     background-image: url("../img/icons/slideshow/arrow-right.svg");
     z-index: 1000;
     display: block;
-    margin-right: 10px;
 }
 
 .fp-scrollable {
